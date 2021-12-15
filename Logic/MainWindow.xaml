@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Logic"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="420" Width="300">
     <Grid>
+        <TextBox x:Name="MainTextBox" HorizontalAlignment="Left" Margin="26,44,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="14"/>
+        <Button x:Name="bt" Content="Вычисление" HorizontalAlignment="Left" Margin="126,141,0,0" VerticalAlignment="Top" Click="Button_Click" FontSize="16" Height="35" Width="121"/>
+        <TextBlock x:Name="tb" HorizontalAlignment="Center" Margin="0,181,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="248" Height="80" FontSize="16"/>
+        <TextBox x:Name="VtTextBox" HorizontalAlignment="Left" Margin="26,104,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="14"/>
+        <Label x:Name="Label1" Content="Выражение 1:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="Label2" Content="Выражение 2:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <RadioButton GroupName="Variant" Content="Проверка на формулу" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="Variant" Content="Эквивалентность" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked_1"/>
+        <RadioButton GroupName="Variant" Content="ДНФ" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" FontSize="16" Checked="RadioButton_Checked_2"/>
+        <RadioButton GroupName="Variant" Content="КНФ" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.607,2.936" Checked="RadioButton_Checked_3"/>
 
     </Grid>
 </Window>
